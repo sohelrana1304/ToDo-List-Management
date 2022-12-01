@@ -52,20 +52,6 @@
 
 ### POST /login
 - Allow an user to login only with their email and password.
-- They will receive an OTP (One Time Password), they need to enter that OTP in the next API call in order to get logged in successfully.
-- On a successful OTP sended note send the response message as shown below.
-- __Response format__
-  - _**On success**_ - Return HTTP status 200 and a message in response body. The response should be a JSON object like [this](#successful-response-structure)
-  - _**On error**_ - Return a suitable error message with a valid HTTP status code. The response should be a JSON object like [this](#error-response-structure)
-```yaml
-{
-    "status": true,
-    "message": "OTP sent successfully",
-}
-```
-
-### POST /enterOtp
-- After receiving the OTP in mail id , users need to provide that OTP into the API request Body and then only they will able to login successfully.
 - On a successful login attempt return the userId and a JWT token contatining the userId, exp, iat.
 - __Response format__
   - _**On success**_ - Return HTTP status 200 and JWT token in response body. The response should be a JSON object like [this](#successful-response-structure)
