@@ -1,0 +1,21 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "- This project consists of 11 APIs, 3 for Users, 4 for Boards and 4 for Tasks.\r - First of all,We need to register/Sign up the user, then verify them via successfull login and then perform a two-step verification by sending them an OTP in their email Id.\r - Next step would be to create Board by the authenticated users, the operations they'll be able to perform with their boards are : \r  1) Create Board\r  2) Fetch their Boards details nby the board Id\r  3) Update Baord\r  4) Delete board\r  - Final step is to list the tasks by the users itself. They can list their tasks and can work accordingly. There's a status of the task to be added as \"Todo\", \"Doing\" or \"Done\".\r     - If the task is in \"Todo\" status then it can be updated or we can say it is live.\r     - Same for the \"Doing\" status also.\r     - But, If the task is in \"Done\" status, then nothing can be changed or updated on that specific task.\r - Used JWT for authentication and authorization, also assigned iat and exp to the JWT token. Sended token to the header as `x-auth-key`.\r - Created a branch named `Project/TodoList` and followed all the naming convention in order to convey my work efficiently.",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.7.5",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
